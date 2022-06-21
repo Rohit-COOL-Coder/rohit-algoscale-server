@@ -12,7 +12,7 @@ app.use(cors())
 
 app.use('/api/employee/',empRoute)
 
-mongoose.connect("mongodb+srv://rohitkumarsah:rohitkumarsah@cluster0.jiuewob.mongodb.net/?retryWrites=true&w=majority").then(()=>{
+mongoose.connect(process.env.MONGO_URL).then(()=>{
  console.log("db connected...")
 }).catch((err)=>{
     console.log(err)
