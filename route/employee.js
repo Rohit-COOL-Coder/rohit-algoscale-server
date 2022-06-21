@@ -1,5 +1,6 @@
 const Employee = require("../model/Employee")
 const CryptoJS=require("crypto-js")
+const jwt=require("jsonwebtoken")
 
 const Route=require("express").Router()
 
